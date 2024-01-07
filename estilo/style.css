@@ -1,0 +1,115 @@
+@charset "UTF-8";
+@font-face {
+    font-family:"honey" ;
+    src: url("../fontes/HoneyBlackDEMO.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family:"dreams" ;
+    src: url("../fontes/CaviarDreams.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+header{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../imagens/header.jpg");
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom: 2px solid black;
+}
+header h1{
+    font-family: "honey";
+    font-size: 7vw;
+    font-weight: lighter;
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    height: auto;
+    font-variant: small-caps;
+}
+header p{
+    font-family: "dreams";
+    font-size: 2vw;
+    color: black;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    height: auto;
+}
+header a,footer a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: black;
+    margin-bottom: 40px;
+}
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+}
+.normal{
+    background-color: white;
+    color: black;
+    padding-bottom: 20px;
+    margin-bottom: -20px;
+}
+.imagem{
+    background-color: rgb(75, 75, 75);
+    color: rgb(255, 255, 255);
+   box-shadow: inset 4px 4px 13px 5px rgba(0, 0, 0, 0.61);
+}
+#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+}
+#img02{
+    background-image: url("../imagens/background002.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+section p{
+    margin-left: 20px;
+    font-family: "dreams";
+    font-weight: bold;
+    font-size: 3vw;
+    padding-bottom: 90px;
+}
+.imagem >p{
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 5px;
+    display: inline-block;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.692);
+}
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
